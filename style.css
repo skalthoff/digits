@@ -1,0 +1,76 @@
+:root {
+    --color-background: #FDF5E3;
+    --color-text: #000;
+    --color-input-background: #fff;
+    --color-button: #00a800;
+    --color-button-hover: #008000;
+}
+
+[data-theme="dark"] {
+    --color-background: #333;
+    --color-text: #fff;
+    --color-input-background: #444;
+    --color-button: #008000;
+    --color-button-hover: #00a800;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-text);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-text);
+    font-size: 16px;
+    background-color: var(--color-input-background);
+    color: var(--color-text);
+}
+
+.solve-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-button);
+    color: var(--color-text);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.solve-button:hover {
+    background-color: var(--color-button-hover);
+}
+
+.result-text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--color-text);
+}
